@@ -1,3 +1,12 @@
+/*common*/
 *{margin:0; padding:0; box-sizing:border-box;}
-aside{width:330px; height:100%;}
-aside>img{width:100%;}
+a{display:block; text-decoration:none; color:#fff;}
+li{list-style:none;}
+/*side-menu*/
+aside{display:flex; flex-direction:column; justify-content:center; align-items:center; position:relative; width:330px; height:100%; padding-top:65px;}
+aside>img{position:absolute; top:0; z-index:-1; width:100%;}
+aside .logo{margin:0 auto;}
+aside .side_menu_list{width:100%; height:auto; margin-top:90px;}
+aside .side_menu_list>li{position:relative; width:234px; height:50px; margin:0 auto; border-bottom:1px solid #fff; line-height:50px; text-align:center;}
+aside .side_menu_list>li:after{display:inline-block; content:""; position:absolute; bottom:0; left:102px; width:30px; height:2px; background:#fff;}
+aside .side_menu_list>li ul{display:none;}
