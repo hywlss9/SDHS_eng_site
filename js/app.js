@@ -53,10 +53,10 @@ function event(){ //event
     })
 }
 function scroll(){ //sidemenu scroll event
-   	var h = $("aside>img").height();
+   	var h = $("aside .sub-background").height();
     var dh = $(document).height();
     var wh = $(window).height();
     var st = $(document).scrollTop();
    	var top= ((h-wh)*st)/(dh-wh);
-    $("aside>img").css({"top": -top+"px"});
+    $("aside .sub-background").css({"top": -top+"px"});
 }
