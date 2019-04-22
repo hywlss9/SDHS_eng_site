@@ -22,13 +22,13 @@ var broserch = function(){ //브라우저 체크
     return version;
 };
 if(broserch() == "9.0" || broserch() == "8.0" || broserch() == "7.0" || broserch() == "6.0" || broserch() == "5.0"){
-	alert("You are using an older browser. Please use the latest browser.");
-	window.open('','_self').close();
+   alert("You are using an older browser. Please use the latest browser.");
+   window.open('','_self').close();
 }else{
-	window.onload = function(){
-	    event();
-	    scroll();
-	}
+   window.onload = function(){
+       event();
+       scroll();
+   }
 }
 
 function event(){ //event
@@ -44,19 +44,19 @@ function event(){ //event
         scroll();
     })
     .on("mouseenter", ".side-menu-list>li>ul>li", function(){
-    	$(this).css({"background":"#3aabdc"});
-    	$(this).find("a").css({"color":"#fff"});
+       $(this).css({"background":"#3aabdc"});
+       $(this).find("a").css({"color":"#fff"});
     })
     .on("mouseleave", ".side-menu-list>li>ul>li", function(){
-    	$(this).css({"background":"none"});
-    	$(this).find("a").css({"color":"#000"});
+       $(this).css({"background":"none"});
+       $(this).find("a").css({"color":"#000"});
     })
 }
 function scroll(){ //sidemenu scroll event
-   	var h = $("aside .sub-background").height();
+      var h = $("aside>img").height();
     var dh = $(document).height();
     var wh = $(window).height();
     var st = $(document).scrollTop();
-   	var top= ((h-wh)*st)/(dh-wh);
-    $("aside .sub-background").css({"top": -top+"px"});
+      var top= ((h-wh)*st)/(dh-wh);
+    $("aside>img").css({"top": -top+"px"});
 }
