@@ -22,41 +22,81 @@ var broserch = function(){ //브라우저 체크
     return version;
 };
 if(broserch() == "9.0" || broserch() == "8.0" || broserch() == "7.0" || broserch() == "6.0" || broserch() == "5.0"){
-   alert("You are using an older browser. Please use the latest browser.");
-   window.open('','_self').close();
-}else{
-   window.onload = function(){
-       event();
-       scroll();
-   }
+    alert("You are using an older browser. Please use the latest browser.");
+    window.open('','_self').close();
 }
 
+var text = "", pt = 0;
+var url = document.URL.substring(document.URL.lastIndexOf("/") + 1, document.URL.length);
 function event(){ //event
     $(document)
-    .on("mouseenter", ".side-menu-list>li", function(){
+    .on("mouseenter", ".side-menu-list>li", function(){ //sidemenu list hover
         $(".active").removeClass("active");
         $(this).find("ul").addClass("active");
     })
-    .on("mouseleave", ".side-menu-list>li", function(e){
+    .on("mouseleave", ".side-menu-list>li", function(e){ //sidemenu list mouseout
         $(this).find("ul").removeClass("active");
     })
-    .on("scroll", function(){
+    .on("scroll", function(){ //scroll function
         scroll();
     })
-    .on("mouseenter", ".side-menu-list>li>ul>li", function(){
-       $(this).css({"background":"#3aabdc"});
-       $(this).find("a").css({"color":"#fff"});
+    .on("mouseenter", ".side-menu-list>li>ul>li", function(){ //sidemenu list in menu hover
+        $(this).css({"background":"#3aabdc"});
+        $(this).find("a").css({"color":"#fff"});
     })
-    .on("mouseleave", ".side-menu-list>li>ul>li", function(){
-       $(this).css({"background":"none"});
-       $(this).find("a").css({"color":"#000"});
+    .on("mouseleave", ".side-menu-list>li>ul>li", function(){ //sidemenu list in menu mouseout
+        $(this).css({"background":"none"});
+        $(this).find("a").css({"color":"#000"});
+    })
+    .on("click", ".aboutus-li li", function(e){ //sidemenu list in menu click
+        if(url == "index.html"){ //this page is index.html
+            e.preventDefault();
+            var ts = $(this).index();
+            $("html, body").animate({scrollTop : $("section").eq(ts).offset().top}, 400);
+        }
+        text = $(this).text();
+        localStorage.setItem("mainST", text);
     })
 }
+
 function scroll(){ //sidemenu scroll event
-      var h = $("aside>img").height();
+    var h = $("aside>img").height();
     var dh = $(document).height();
     var wh = $(window).height();
     var st = $(document).scrollTop();
-      var top= ((h-wh)*st)/(dh-wh);
+    var top = ((h-wh)*st)/(dh-wh);
     $("aside>img").css({"top": -top+"px"});
 }
+$(document).ready(function(){
+    if(url == "index.html"){
+        text = localStorage.getItem("mainST")=="" ? 0 : localStorage.getItem("mainST");
+        switch(text){
+            case "Mission and Vision":
+                pt = $("#philosophy").offset().top;
+                break;
+            case "Five Educational Goals":
+                pt = $("#five_goals").offset().top;
+                break;
+            case "DEGITECH Talents":
+                pt = $("#digi_talents").offset().top;
+                break;
+            case "School Facilities":
+                pt = $("#facilities").offset().top;
+                break;
+            case "History and Founding orders":
+                pt = $("#history").offset().top;
+                break;
+            case "Contact Us":
+                pt = $("#contact_us").offset().top;
+                break;
+        }
+        $(document).scrollTop(pt);
+        localStorage.setItem("mainST", "Mission and Vision");
+    }
+    event();
+    scroll();
+})
+// window.onload = function(){
+//     event();
+//     scroll();
+// }
