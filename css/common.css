@@ -5,7 +5,7 @@ body{background:#F6F6F2;}
 a{display:block; text-decoration:none; color:#fff;}
 li{list-style:none;}
 /* side-menu */
-aside{display:flex; flex-wrap:wrap; justify-content:center; align-content:flex-start; position:fixed; z-index:1; height:100vh;}
+aside{display:flex; flex-wrap:wrap; justify-content:center; align-content:flex-start; position:fixed; z-index:1; height:100vh; font-weight:bold;}
 aside.main{width:404px;}
 aside.sub{width:330px;}
 aside>img{position:absolute; top:0; left:0; z-index:-1; width:100%;}

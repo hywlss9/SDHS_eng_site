@@ -18,7 +18,9 @@ hr{margin-top:30px; border-top:1px solid #cbcbcb;}
 #digi_talents p span{font-weight:bold;}
 /* facilities */
 #facilities .subtitle{width:283px; padding-left:17px; background:#7ccdee; text-align:left;}
-#facilities img{width:100%;}
+#facilities .subtitle+img{width:100%; margin-bottom:35px;}
+#facilities ul+img{margin-top:85px;}
+#facilities ul{overflow:hidden; width:100%; height:auto;}
 #facilities ul li{float:left; width:215.3px; margin-bottom:25px; margin-right:23px; list-style:none;}
 #facilities ul li:nth-child(3){margin-right:0;}
 #facilities ul li:nth-child(6){margin-right:0;}
