@@ -60,12 +60,12 @@ function event(){ //event
 }
 
 function scroll(){ //sidemenu scroll event
-    var h = $("aside>img").height();
+    var h = $("aside .side-bg-box img").height();
     var dh = $(document).height();
     var wh = $(window).height();
     var st = $(document).scrollTop();
     var top = ((h-wh)*st)/(dh-wh);
-    $("aside>img").css({"top": -top+"px"});
+    $("aside .side-bg-box img").css({"top": -top+"px"});
 }
 $(document).ready(function(){
     if(url == "index.html"){

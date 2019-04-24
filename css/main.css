@@ -1,7 +1,7 @@
 /* section */
 section.main{width:806px; height:auto; margin-left:404px; padding:20px 57px 0 57px; background:#fff;}
 section>img{display:block; margin:55px auto;}
-.subtitle{display:block; width:auto; height:35px; font-size:15px; font-weight:500; line-height:35px; text-align:center; color:white;}
+section .subtitle{display:block; width:auto; height:35px; margin-top:15px; font-size:15px; font-weight:500; line-height:35px; text-align:center; color:white;}
 hr{margin-top:30px; border-top:1px solid #cbcbcb;}
 /* philosophy */
 #philosophy .subtitle{width:240px; background:#5567a3;}
@@ -18,7 +18,8 @@ hr{margin-top:30px; border-top:1px solid #cbcbcb;}
 #digi_talents p span{font-weight:bold;}
 /* facilities */
 #facilities .subtitle{width:283px; padding-left:17px; background:#7ccdee; text-align:left;}
-#facilities .subtitle+img{width:100%; margin-bottom:35px;}
+#facilities .subtitle+img{width:100%; margin:40px 0 35px;}
+#facilities .fac-bar{width:50px; margin:15px auto 0; border-top:1px solid #666666;}
 #facilities ul+img{margin-top:85px;}
 #facilities ul{overflow:hidden; width:100%; height:auto;}
 #facilities ul li{float:left; width:215.3px; margin-bottom:25px; margin-right:23px; list-style:none;}
