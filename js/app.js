@@ -30,7 +30,7 @@ var text = "", pt = 0;
 var url = document.URL.substring(document.URL.lastIndexOf("/") + 1, document.URL.length);
 function event(){ //event
     $(document)
-    .on("mouseenter", ".side-menu-list>li", function(){ //sidemenu list hover
+    .on("mouseenter", ".side-menu-list>li", function(e){ //sidemenu list hover
         $(".active").removeClass("active");
         $(this).find("ul").addClass("active");
     })
@@ -48,8 +48,8 @@ function event(){ //event
         $(this).css({"background":"none"});
         $(this).find("a").css({"color":"#000"});
     })
-    .on("click", ".aboutus-li li", function(e){ //sidemenu list in menu click
-        if(url == "index.html"){ //this page is index.html
+    .on("mouseenter", ".aboutus-li li", function(e){ //sidemenu list in menu click
+        if(url.indexOf("index.html") != -1){ //this page is index.html
             e.preventDefault();
             var ts = $(this).index();
             $("html, body").animate({scrollTop : $("section").eq(ts).offset().top}, 400);
