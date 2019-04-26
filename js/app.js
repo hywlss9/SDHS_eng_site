@@ -92,6 +92,8 @@ $(document).ready(function(){
         }
         $(document).scrollTop(pt);
         localStorage.setItem("mainST", "Mission and Vision");
+    }else if(url == ""){
+        location.href = "/index.html";
     }
     event();
     scroll();

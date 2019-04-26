@@ -12,7 +12,7 @@ section *[class$="pink"]{color:#ff006c;}
 section *[class$="blue"]{color:#00abff;}
 section *[class$="green"]{color:#00a896;}
 section *[class$="yellow"]{color:#ff9000;}
-section .sub-main-img{margin-bottom:47px;}
+section .academics-main-img{margin-bottom:47px;}
 section dl{width:100%; height:auto; margin-bottom:39px;}
 section dl dt{height:100%; font-size:16px; font-weight:900; letter-spacing:-0.16px; line-height:18px; color:#272218;}
 section dl dt div[class^="bar"]{height:1px; margin-bottom:5px;}
@@ -26,10 +26,10 @@ section dl.dl-long dt div[class^="bar"]{width:201px;}
 section div[class*="img-box"]{display:flex; justify-content:space-between; width:100%; margin-bottom:45px;}
 section div[class*="img-box"] *{float:left; width:246px;}
 section div[class*="img-box"] div{display:flex; flex-direction:column; justify-content:space-between;}
-section .sub-gimg-box{height:427px;}
-section .sub-vimg-box{height:445px;}
-section .sub-simg-box{height:427px;}
-section .sub-iimg-box{height:595px;}
+section .academics-gimg-box{height:427px;}
+section .academics-vimg-box{height:445px;}
+section .academics-simg-box{height:427px;}
+section .academics-iimg-box{height:595px;}
 section.space-content div[class*="img-box"] div img{width:193px;}
 section.space-content div[class*="img-box"] div img:nth-child(1), section.space-content div[class*="img-box"] div img:nth-child(4){height:139px;}
 section.space-content div[class*="img-box"] div img:nth-child(2), section.space-content div[class*="img-box"] div img:nth-child(5){height:144px;}
