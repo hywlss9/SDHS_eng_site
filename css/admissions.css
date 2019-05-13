@@ -2,3 +2,13 @@ section{position:relative; left:330px; width:877px; padding:24px 60px 0; backgro
 section .admissions-icon{display:block; margin:48px auto 31px;}
 section h2{margin-top:-12px; font-size:38px; font-weight:normal; line-height:58px; text-align:center; letter-spacing:-1.9px; color:#668f88;}
 section p{margin-bottom:48px; font-size:14px; letter-spacing:-0.14px; text-align:center; color:#668f88;}
+section .admissions-main-img{margin-bottom:39px;}
+section dl{width:100%; height:auto; margin-bottom:39px;}
+section dl dt{height:100%; font-size:16px; font-weight:900; letter-spacing:-0.16px; line-height:18px; color:#272218;}
+section dl dt div[class^="bar"]{height:1px; margin-bottom:5px;}
+section dl dt .bar-blue{background:#0078b7;}
+section dl dd{font-size:14px; line-height:24px; letter-spacing:-0.14px; color:#272218;}
+section dl dd span{font-weight:bold;}
+section dl.dl-long dt div[class^="bar"]{width:201px;}
+section table{width:100%; height:auto; margin-top:24px; border-top:1px solid #6d6d6d; border-bottom:1px solid #6d6d6d; border-collapse:collapse; font-size:14px; text-align:center;}
+section table thead{background:#0085ca;}
