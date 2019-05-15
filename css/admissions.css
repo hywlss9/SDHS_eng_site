@@ -11,4 +11,6 @@ section dl dd{font-size:14px; line-height:24px; letter-spacing:-0.14px; color:#2
 section dl dd span{font-weight:bold;}
 section dl.dl-long dt div[class^="bar"]{width:201px;}
 section table{width:100%; height:auto; margin-top:24px; border-top:1px solid #6d6d6d; border-bottom:1px solid #6d6d6d; border-collapse:collapse; font-size:14px; text-align:center;}
-section table thead{background:#0085ca;}
+section table thead{background:#0085ca; color:#fff;}
+section table thead tr td{border:1px solid #fff;}
+section table tbody tr td{border:1px solid #6d6d6d;}
