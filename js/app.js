@@ -49,7 +49,7 @@ function event(){ //event
         $(this).find("a").css({"color":"#000"});
     })
     .on("mouseenter", ".aboutus-li li", function(e){ //sidemenu list in menu click
-        if(url.indexOf("index.html") != -1){ //this page is index.html
+        if(url.indexOf("aboutus.html") != -1){ //this page is aboutus.html
             e.preventDefault();
             var ts = $(this).index();
             $("html, body").animate({scrollTop : $("section").eq(ts).offset().top}, 400);
@@ -68,7 +68,7 @@ function scroll(){ //sidemenu scroll event
     $("aside .side-bg-box img").css({"top": -top+"px"});
 }
 $(document).ready(function(){
-    if(url == "index.html"){
+    if(url == "aboutus.html"){
         text = localStorage.getItem("mainST")=="" ? 0 : localStorage.getItem("mainST");
         switch(text){
             case "Mission and Vision":
@@ -93,7 +93,7 @@ $(document).ready(function(){
         $(document).scrollTop(pt);
         localStorage.setItem("mainST", "Mission and Vision");
     }else if(url == ""){
-        location.href = "/index.html";
+        location.href = "/aboutus.html";
     }
     event();
     scroll();
