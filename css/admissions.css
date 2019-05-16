@@ -13,4 +13,9 @@ section dl.dl-long dt div[class^="bar"]{width:201px;}
 section table{width:100%; height:auto; margin-top:24px; border-top:1px solid #6d6d6d; border-bottom:1px solid #6d6d6d; border-collapse:collapse; font-size:14px; text-align:center;}
 section table thead{background:#0085ca; color:#fff;}
 section table thead tr td{border:1px solid #fff;}
+section table thead tr td:first-child{border-left:none;}
+section table thead tr td:last-child{border-right:none;}
 section table tbody tr td{border:1px solid #6d6d6d;}
+section table tbody tr td:first-child{border-left:none;}
+section table tbody tr td:last-child{border-right:none;}
+section table .bor-bot-6d{border-bottom:1px solid #6d6d6d;}
