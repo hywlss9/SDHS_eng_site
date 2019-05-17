@@ -67,7 +67,10 @@ function scroll(){ //sidemenu scroll event
     var top = ((h-wh)*st)/(dh-wh);
     $("aside .side-bg-box img").css({"top": -top+"px"});
 }
-$(document).ready(function(){
+
+window.onload = function(){
+    if(url == "index.html")
+        localStorage.setItem("mainST", "Mission and Vision");
     if(url == "aboutus.html"){
         text = localStorage.getItem("mainST")=="" ? 0 : localStorage.getItem("mainST");
         switch(text){
@@ -93,12 +96,8 @@ $(document).ready(function(){
         $(document).scrollTop(pt);
         localStorage.setItem("mainST", "Mission and Vision");
     }else if(url == ""){
-        location.href = "/aboutus.html";
+        location.href = "/index.html";
     }
     event();
     scroll();
-})
-// window.onload = function(){
-//     event();
-//     scroll();
-// }
+}
