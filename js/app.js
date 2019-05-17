@@ -68,7 +68,7 @@ function scroll(){ //sidemenu scroll event
     $("aside .side-bg-box img").css({"top": -top+"px"});
 }
 
-window.onload = function(){
+$(document).ready(function(){
     if(url == "index.html")
         localStorage.setItem("mainST", "Mission and Vision");
     if(url == "aboutus.html"){
@@ -100,4 +100,7 @@ window.onload = function(){
     }
     event();
     scroll();
-}
+});
+// window.onload = function(){
+    
+// }
