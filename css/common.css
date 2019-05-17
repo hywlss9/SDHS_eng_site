@@ -6,10 +6,10 @@ a{display:block; text-decoration:none; color:#fff;}
 li{list-style:none;}
 /* side-menu */
 aside{display:flex; flex-wrap:wrap; justify-content:center; align-content:flex-start; position:fixed; z-index:1; height:100vh; font-weight:bold;}
-aside.main{width:404px;}
+aside.aboutus{width:404px;}
 aside.academics, aside.admissions{width:330px;}
 aside .side-bg-box{overflow:hidden; position:absolute; top:0; left:0; z-index:-1; width:100%; height:100vh;}
-aside .side-bg-box img{position:absolute; width:100%; -webkit-filter:blur(1.5px); filter:blur(1.5px);}
+aside .side-bg-box img{position:absolute; width:100%;}
 aside .logo{position:relative; top:65px; height:84px;}
 aside .logo img{border:none;}
 aside .side-menu-list{position:relative; top:180px; width:100%; height:auto;}
@@ -25,12 +25,12 @@ aside .side-menu-list>li ul li a{display:block; font-size:14px; color:#000;}
 /* footer */
 footer{position:relative; z-index:3; width:100%; height:70px;}
 .footer_icon.main{width:404px;}
-.footer_icon.academics{width:330px;}
+.footer_icon.sub{width:330px;}
 .footer_icon{float:left; height:100%; background:rgba(0,0,0,0.2); text-align:center;}
 .footer_icon a{display:inline-block; margin:15px 10px 0; line-height:50px;}
 .footer_icon i{font-size:24px;}
 .footer_list.main{float:left; width:calc(100% - 404px); height: 100%; background:#fff; border-top:1px solid rgba(0,0,0,0.05);}
-.footer_list.academics{float: left; width:calc(100% - 330px);height: 100%; background:#fff; border-top:1px solid rgba(0,0,0,0.05);}
+.footer_list.sub{float: left; width:calc(100% - 330px);height: 100%; background:#fff; border-top:1px solid rgba(0,0,0,0.05);}
 .footer_list ul{text-align:center;}
 .footer_list li{display:inline-block; padding-left:20px; font-size:13px; line-height:70px; letter-spacing:-0.25px;}
 .footer_list a{color:#6b6966;}
