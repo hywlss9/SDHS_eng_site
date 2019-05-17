@@ -6,8 +6,8 @@ a{display:block; text-decoration:none; color:#fff;}
 li{list-style:none;}
 /* side-menu */
 aside{display:flex; flex-wrap:wrap; justify-content:center; align-content:flex-start; position:fixed; z-index:1; height:100vh; font-weight:bold;}
-aside.aboutus{width:404px;}
-aside.academics, aside.admissions{width:330px;}
+aside.main{width:404px;}
+aside.sub{width:330px;}
 aside .side-bg-box{overflow:hidden; position:absolute; top:0; left:0; z-index:-1; width:100%; height:100vh;}
 aside .side-bg-box img{position:absolute; width:100%;}
 aside .logo{position:relative; top:65px; height:84px;}
