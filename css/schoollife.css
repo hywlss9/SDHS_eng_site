@@ -24,15 +24,15 @@ section .subtitle{display:block; width:auto; height:35px; margin-top:15px; paddi
 #global_sdhs img{margin:20px auto;}
 #global_sdhs img:last-child{margin:20px auto 0;}
 /*sub_section*/
-#sub_section>div{padding-bottom: 5px;}
-#sub_section hr{margin:40px 0 5px; border:1px solid #2f8ed0; width:201px;border-bottom: 0;}
+#sub_section>div{padding-bottom:5px;}
+#sub_section hr{width:201px; margin:40px 0 5px; border:1px solid #2f8ed0; border-bottom:0; text-align:left;}
 #sub_section h3{font-size:16px; font-weight:900; letter-spacing:-0.1px; color:#585858;}
 #sub_section ul{margin:10px 0 30px;}
 #sub_section>div>img{display:block; margin:30px auto;}
 #sub_section li{max-width:100%; font-size:14px; line-height:24px; color:#737373;}
-#sub_section li span{font-size:20px; font-weight:900; border-radius:100%; vertical-align: 5px;}
+#sub_section li span{border-radius:100%; font-size:20px; font-weight:900; vertical-align:5px;}
 #sub_section p{max-width:759px; margin:30px 0; font-size:14px; line-height:24px; color:#737373;}
 #sub_section .iwrap{width:auto; height:400px; margin-bottom:30px;}
 #sub_section .iwrap img{display:block; float:left; margin:0 13.5px 10px 0;}
-#sub_section .iwrap img:nth-child(3){margin:0 0 10px 0;}
-#sub_section .iwrap img:nth-child(6){margin:0 0 10px 0;}
+#sub_section .iwrap img:nth-child(3){margin:0 0 10px;}
+#sub_section .iwrap img:nth-child(6){margin:0 0 10px;}

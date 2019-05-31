@@ -12,4 +12,4 @@
 #korea-page .img-box img:last-child{top:-180px; right:-50px;}
 #eng-page .img-box img, #korea-page .img-box img{position:absolute;}
 /*footer*/
-#footer{position:absolute; bottom:0; width:100%; height:130px; padding-top:22px; background:rgba(0,0,0,0.5); font-size:14px; line-height:24px; letter-spacing:0.35px; text-align:center; color:#fff;}
+#footer{position:absolute; left:0; bottom:0; width:100%; height:130px; padding-top:22px; background:rgba(0,0,0,0.5); font-size:14px; line-height:24px; letter-spacing:0.35px; text-align:center; color:#fff;}
